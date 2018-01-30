@@ -61,7 +61,7 @@
             height:100%;
         }
         .bottom-container {
-            background-color:blue;
+            background-color:#f7f7f7;
             height: 500px;
             width:100%;
             margin-top:20px;
@@ -101,6 +101,26 @@
             float: left;
             width:calc(100% - 210px);
         }
+        .gallery ul.row {
+            margin-top:25px;
+            margin-bottom:25px;
+            list-style-type:none;
+            text-align:center;
+            width:100%;
+        }
+        .gallery ul.row li {
+            margin-right:15px;
+            display: inline-block;
+        }
+        .gallery ul.row li > img {
+            height:150px;
+            width:200px;
+        }
+        .box-shadow {
+            -webkit-box-shadow: 7px 3px 60px -20px rgba(0,0,0,1);
+            -moz-box-shadow: 7px 3px 60px -20px rgba(0,0,0,1);
+            box-shadow: 7px 3px 60px -20px rgba(0,0,0,1);
+        }
 
 
     </style>
@@ -111,7 +131,7 @@
         <span class="logo">LOGO</span>
     </header>
     <div class="main-container">
-        <div class="bio-container">
+        <div class="bio-container" "box-shadow">
             <div class="avatar">
                 <img src="./img/avatar.png" rel="my avater">
             </div>
@@ -120,7 +140,7 @@
             <p>asdfasdfasfasfdasdf asdfasfsadfasdfasfsadfasdfasfsadfasdfasfsadf asdfasfsadf</p>
             <p>asdfasdfasfasfdasdf asdfasfsadfasdfasfsadfasdfasfsadfasdfasfsadf asdfasfsadf</p>
         </div>
-        <div class="bottom-container">
+        <div class="bottom-container" "box-shadow">
             <aside class="left-sidebar">
                 <ul class="navigation">
                     <li><a href="#">Link</a></li>
@@ -133,6 +153,18 @@
             </aside>
             <div class="gallery">
                 <h3>Gallery</h3>
+                <ul class ="row">
+                    <li><img class="box-shadow" src="./img/1.png" alt="car"></li>
+                    <li><img class="box-shadow" src="./img/2.png" alt="car"></li>
+                    <li><img class="box-shadow" src="./img/3.png" alt="car"></li>
+                    <li><img class="box-shadow" src="./img/4.png" alt="car"></li>
+                </ul>
+                <ul class ="row">
+                    <li><img class="box-shadow" src="./img/5.png" alt="car"></li>
+                    <li><img class="box-shadow" src="./img/6.png" alt="car"></li>
+                    <li><img class="box-shadow" src="./img/7.png" alt="car"></li>
+                    <li><img class="box-shadow" src="./img/8.png" alt="car"></li>
+                </ul>
             </div>
         </div>
     </div>
