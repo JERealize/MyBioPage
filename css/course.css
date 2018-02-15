@@ -3,6 +3,14 @@
     padding: 0;
 }
 
+html {
+    height: 100%;
+  }
+
+body {
+    height: calc(100% - 120px);
+  }
+
 .main-header,
 .main-footer {
     background-color: #ccc;
